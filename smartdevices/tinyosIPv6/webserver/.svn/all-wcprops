@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/energyhome/!svn/ver/5/SmartDevices/tinyosIPv6/webserver
+END
+HttpdP.nc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/energyhome/!svn/ver/5/SmartDevices/tinyosIPv6/webserver/HttpdP.nc
+END
+rest.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/energyhome/!svn/ver/5/SmartDevices/tinyosIPv6/webserver/rest.h
+END
+webserverP.nc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/energyhome/!svn/ver/5/SmartDevices/tinyosIPv6/webserver/webserverP.nc
+END
+webserverC.nc
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/energyhome/!svn/ver/5/SmartDevices/tinyosIPv6/webserver/webserverC.nc
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/energyhome/!svn/ver/5/SmartDevices/tinyosIPv6/webserver/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/energyhome/!svn/ver/5/SmartDevices/tinyosIPv6/webserver/README
+END

@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<!--
+The contents of this file are subject to the terms
+of the Common Development and Distribution License
+(the "License").  You may not use this file except
+in compliance with the License.
+
+You can obtain a copy of the license at
+http://www.opensource.org/licenses/cddl1.php
+See the License for the specific language governing
+permissions and limitations under the License.
+-->
+<application xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+             xmlns:html="http://www.w3.org/1999/xhtml"
+             xmlns="http://wadl.dev.java.net/2009/02">
+  <grammars>
+  </grammars>
+  
+  <resources base="http://localhost:8080/contiki/">
+    <resource path="Temperature">
+      <doc xml:lang="en" title="Contiki Temperature Service">
+        The <html:i>Contiki Client Code</html:i> provides Services for motes' Temperature sensing capabilities.
+      </doc>
+      <method name="GET" id="Temperature">
+    	<doc xml:lang="en" title="Measure Temperature in degrees Celsius"/>
+    	<request>
+    	</request>
+    	<response status="200">
+     	 <representation mediaType="text/plain" type="xsd:string">
+        	<doc xml:lang="en" title="The Temperature sensed current value"/>
+      	</representation>
+    	</response>
+  	</method>
+    </resource>
+
+    <resource path="Temperature/Streaming">
+      <doc xml:lang="en" title="Contiki Temperature Streaming Service">
+        The <html:i>Contiki Client Code</html:i> provides Streaming Services for motes' Temperature sensing capabilities.
+      </doc>
+  	<method name="POST" id="TemperatureStreaming">
+    	<doc xml:lang="en" title="Streaming Temperature Measurements in degrees Celsius"/>
+    	<request>
+    	  <param name="iterations" type="xsd:int" required="true" default="1" style="query">
+    	    <doc xml:lang="en" title="Total Iterations of Streaming Measurements"/>
+    	  </param>
+    	  <param name="interval" type="xsd:int" required="true" default="1" style="query">
+    	    <doc xml:lang="en" title="Interval of Streaming Measurements in seconds"/>
+    	  </param>
+    	</request>
+    	<response status="200">
+    	  <representation mediaType="text/plain" type="xsd:string">
+    	    <doc xml:lang="en" title="The Temperature sensed, current, streaming value"/>
+    	  </representation>
+    	</response>
+  	</method>
+    </resource>
+
+    <resource path="Humidity">
+      <doc xml:lang="en" title="Contiki Humidity Service">
+        The <html:i>Contiki Client Code</html:i> provides Services for motes' Humidity sensing capabilities.
+      </doc>
+  <method name="GET" id="Humidity">
+    <doc xml:lang="en" title="Measure Humidity in % value"/>
+    <request>
+    </request>
+    <response status="200">
+      <representation mediaType="text/plain" type="xsd:string">
+        <doc xml:lang="en" title="The Humidity sensed current value"/>
+      </representation>
+    </response>
+  </method>
+    </resource>
+
+    <resource path="Humidity/Streaming">
+      <doc xml:lang="en" title="Contiki Humidity Streaming Service">
+        The <html:i>Contiki Client Code</html:i> provides Streaming Services for motes' Humidity sensing capabilities.
+      </doc>
+  <method name="POST" id="HumidityStreaming">
+    <doc xml:lang="en" title="Streaming Humidity Measurements in % values"/>
+    <request>
+      <param name="iterations" type="xsd:int" required="true" default="1" style="query">
+        <doc xml:lang="en" title="Total Iterations of Streaming Measurements"/>
+      </param>
+      <param name="interval" type="xsd:int" required="true" default="1" style="query">
+        <doc xml:lang="en" title="Interval of Streaming Measurements in seconds"/>
+      </param>
+    </request>
+    <response status="200">
+      <representation mediaType="text/plain" type="xsd:string">
+        <doc xml:lang="en" title="The Humidity sensed, current, streaming value"/>
+      </representation>
+    </response>
+  </method>
+    </resource>
+
+    <resource path="Radiation">
+      <doc xml:lang="en" title="Contiki Radiation Service">
+        The <html:i>Contiki Client Code</html:i> provides services for motes' Radiation sensing capabilities.
+      </doc>
+  <method name="GET" id="Radiation">
+    <doc xml:lang="en" title="Measure Radiation in Lux value"/>
+    <request>
+    </request>
+    <response status="200">
+      <representation mediaType="text/plain" type="xsd:string">
+        <doc xml:lang="en" title="The Radiation sensed current value"/>
+      </representation>
+    </response>
+  </method>
+
+    </resource>
+    <resource path="Radiation/Streaming">
+      <doc xml:lang="en" title="Contiki Radiation Streaming Service">
+        The <html:i>Contiki Client Code</html:i> provides Streaming services for motes' Radiation sensing capabilities.
+      </doc>
+  <method name="POST" id="RadiationStreaming">
+    <doc xml:lang="en" title="Streaming Radiation Measurements in Lux values"/>
+    <request>
+      <param name="iterations" type="xsd:int" required="true" default="1" style="query">
+        <doc xml:lang="en" title="Total Iterations of Streaming Measurements"/>
+      </param>
+      <param name="interval" type="xsd:int" required="true" default="1" style="query">
+        <doc xml:lang="en" title="Interval of Streaming Measurements in seconds"/>
+      </param>
+    </request>
+    <response status="200">
+      <representation mediaType="text/plain" type="xsd:string">
+        <doc xml:lang="en" title="The Radiation sensed, current, streaming value"/>
+      </representation>
+    </response>
+  </method>
+    </resource>
+
+    <resource path="Light">
+      <doc xml:lang="en" title="Contiki Light Service">
+        The <html:i>Contiki Client Code</html:i> provides Services setting motes' Leds.
+      </doc>
+  <method name="POST" id="Light">
+    <doc xml:lang="en" title="Set the RED/GREEN/BLUE Leds that are on the sensor mote ON/OFF"/>
+    <request>
+      <param name="color" type="xsd:character" required="true" default="" style="query">
+        <doc xml:lang="en" title="Leds Color to switch on"/>
+	<option value="R"/>
+        <option value="G"/>
+	<option value="B"/>
+      </param>
+    </request>
+    <response status="200">
+      <representation mediaType="text/plain" type="xsd:string">
+        <doc xml:lang="en" title="Acknowlegment Value"/>
+      </representation>
+    </response>
+  </method>
+    </resource>
+
+  </resources>
+  
+</application>
