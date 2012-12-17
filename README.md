@@ -6,18 +6,20 @@ HomeWeb is an application framework for smart homes, built using Web principles 
 
 If you plan to include this framework in research work, please do not forget to cite the following papers:  
 
-*1.* Andreas Kamilaris, Vlad Trifa, and Andreas Pitsillides. The Smart Home meets the Web of Things. International Journal of Ad Hoc and Ubiquitous Computing (IJAHUC), Special issue on The Smart Digital Home, vol. 7, no. 3, pp. 145-154, April, 2011. 
-*2.* Andreas Kamilaris, Vlad Trifa, and Andreas Pitsillides. HomeWeb: An Application Framework for Web-based Smart Homes. In Proc. of the 18th International Conference on Telecommunications (ICT 2011), Ayia Napa, Cyprus, May 2011.
+1. Andreas Kamilaris, Vlad Trifa, and Andreas Pitsillides. The Smart Home meets the Web of Things. International Journal of Ad Hoc and Ubiquitous Computing (IJAHUC), Special issue on The Smart Digital Home, vol. 7, no. 3, pp. 145-154, April, 2011.  
+
+2. Andreas Kamilaris, Vlad Trifa, and Andreas Pitsillides. HomeWeb: An Application Framework for Web-based Smart Homes. In Proc. of the 18th International Conference on Telecommunications (ICT 2011), Ayia Napa, Cyprus, May 2011.
 
 **Implementation Details:**  
 
 This framework has been developed in Java using the Eclipse development platform
-It follows a modular architecture with three main layers:
-*1.* Device layer, which administers embedded home devices.  
+It follows a modular architecture with three main layers:  
 
-*2.* Control layer, which initializes, controls and checks the framework.  
+1. Device layer, which administers embedded home devices.  
 
-*3.* Presentation layer, which maintains a Web server following the REST principles.
+2. Control layer, which initializes, controls and checks the framework.  
+
+3. Presentation layer, which maintains a Web server following the REST principles.
 
 **Documentation & Manuals:**  
 
