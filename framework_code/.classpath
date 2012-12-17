@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="dependencies/com.noelios.restlet.jar"/>
+	<classpathentry kind="lib" path="dependencies/comm.jar"/>
+	<classpathentry kind="lib" path="dependencies/org.restlet.jar"/>
+	<classpathentry kind="lib" path="dependencies/org.simpleframework.jar"/>
+	<classpathentry kind="lib" path="dependencies/RXTXcomm.jar"/>
+	<classpathentry kind="lib" path="dependencies/tinyos.jar"/>
+	<classpathentry kind="lib" path="dependencies/org.json-2.0.jar"/>
+	<classpathentry kind="lib" path="dependencies/mysql-connector-java-5.1.11-bin.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

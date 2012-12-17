@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!--
+The contents of this file are subject to the terms
+of the Common Development and Distribution License
+(the "License").  You may not use this file except
+in compliance with the License.
+
+You can obtain a copy of the license at
+http://www.opensource.org/licenses/cddl1.php
+See the License for the specific language governing
+permissions and limitations under the License.
+-->
+<application xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+             xmlns:html="http://www.w3.org/1999/xhtml"
+             xmlns="http://wadl.dev.java.net/2009/02">
+  <grammars>
+  </grammars>
+  
+  <resources base="http://localhost:8080/plogg/">
+    <resource path="Electricity">
+      <doc xml:lang="en" title="Plogg Meter Electricity Service">
+        The <html:i>Electricity service</html:i> provides energy consumption measurements in Watts and kWh.
+      </doc>
+      <method name="GET" id="Electricity">
+    	<doc xml:lang="en" title="Measure electrical consumption in Watts and kWh"/>
+    	<request>
+    	</request>
+    	<response status="200">
+     	 <representation mediaType="application/json" type="xsd:string">
+        	<doc xml:lang="en" title="The JSON value of the energy consumption measurement of the connected electrical appliance"/>
+      	</representation>
+    	</response>
+  	</method>
+    </resource>
+
+  </resources>
+  
+</application>

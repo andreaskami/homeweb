@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!--
+The contents of this file are subject to the terms
+of the Common Development and Distribution License
+(the "License").  You may not use this file except
+in compliance with the License.
+
+You can obtain a copy of the license at
+http://www.opensource.org/licenses/cddl1.php
+See the License for the specific language governing
+permissions and limitations under the License.
+-->
+<application xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+             xmlns:html="http://www.w3.org/1999/xhtml"
+             xmlns="http://wadl.dev.java.net/2009/02">
+  <grammars>
+  </grammars>
+  
+  <resources base="http://localhost:8080/tinyOS/">
+    <resource path="Temperature">
+      <doc xml:lang="en" title="tinyOS Temperature Service">
+        The <html:i>tinyOS Client Code</html:i> provides Services for motes' Temperature sensing capabilities.
+      </doc>
+      <method name="GET" id="Temperature">
+    	<doc xml:lang="en" title="Measure Temperature in degrees Celsius"/>
+    	<request>
+    	</request>
+    	<response status="200">
+     	 <representation mediaType="text/plain" type="xsd:string">
+        	<doc xml:lang="en" title="The Temperature sensed current value"/>
+      	</representation>
+    	</response>
+  	</method>
+    </resource>
+
+    <resource path="Humidity">
+      <doc xml:lang="en" title="tinyOS Humidity Service">
+        The <html:i>tinyOS Client Code</html:i> provides Services for motes' Humidity sensing capabilities.
+      </doc>
+  <method name="GET" id="Humidity">
+    <doc xml:lang="en" title="Measure Humidity in % value"/>
+    <request>
+    </request>
+    <response status="200">
+      <representation mediaType="text/plain" type="xsd:string">
+        <doc xml:lang="en" title="The Humidity sensed current value"/>
+      </representation>
+    </response>
+  </method>
+    </resource>
+
+    <resource path="Illumination">
+      <doc xml:lang="en" title="tinyOS Illumination Service">
+        The <html:i>tinyOS Client Code</html:i> provides services for motes' Radiation sensing capabilities.
+      </doc>
+  <method name="GET" id="Illumination">
+    <doc xml:lang="en" title="Measure Illumination in Lux value"/>
+    <request>
+    </request>
+    <response status="200">
+      <representation mediaType="text/plain" type="xsd:string">
+        <doc xml:lang="en" title="The Illumination sensed current value"/>
+      </representation>
+    </response>
+  </method>
+    </resource>
+
+  </resources>
+  
+</application>

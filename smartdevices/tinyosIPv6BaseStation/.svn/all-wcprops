@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/energyhome/!svn/ver/5/SmartDevices/tinyosIPv6BaseStation
+END
+Reset.nc
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/energyhome/!svn/ver/5/SmartDevices/tinyosIPv6BaseStation/Reset.nc
+END
+ResetC.nc
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/energyhome/!svn/ver/5/SmartDevices/tinyosIPv6BaseStation/ResetC.nc
+END
+Reset.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/energyhome/!svn/ver/5/SmartDevices/tinyosIPv6BaseStation/Reset.h
+END
+BaseStationP.nc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/energyhome/!svn/ver/5/SmartDevices/tinyosIPv6BaseStation/BaseStationP.nc
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/energyhome/!svn/ver/5/SmartDevices/tinyosIPv6BaseStation/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/energyhome/!svn/ver/5/SmartDevices/tinyosIPv6BaseStation/README
+END
+BaseStationC.nc
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/energyhome/!svn/ver/5/SmartDevices/tinyosIPv6BaseStation/BaseStationC.nc
+END
