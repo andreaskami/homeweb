@@ -46,5 +46,6 @@ However, you are encouraged to write your own drivers for interacting with your 
 
 Happy Home Automation! :)
 
-Dr Andreas Kamilaris
+Dr Andreas Kamilaris  
+
 University of Cyprus
